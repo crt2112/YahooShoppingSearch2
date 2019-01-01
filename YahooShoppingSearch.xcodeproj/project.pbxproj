@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		692BDCEDA0D2C40FD4F69812 /* Pods_YahooShoppingSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC27F427BCD3E264B5E16526 /* Pods_YahooShoppingSearch.framework */; };
 		E212396E21777A2100292849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212396D21777A2100292849 /* AppDelegate.swift */; };
 		E212397321777A2100292849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E212397121777A2100292849 /* Main.storyboard */; };
 		E212397521777A2300292849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E212397421777A2300292849 /* Assets.xcassets */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D476D8229D7DEF8DE23C79A /* Pods-YahooShoppingSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahooShoppingSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-YahooShoppingSearch/Pods-YahooShoppingSearch.release.xcconfig"; sourceTree = "<group>"; };
+		A7BCADAC07A36AA8080EEC16 /* Pods-YahooShoppingSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahooShoppingSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YahooShoppingSearch/Pods-YahooShoppingSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		E212396A21777A2100292849 /* YahooShoppingSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooShoppingSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E212396D21777A2100292849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E212397221777A2100292849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		E21DE2E2217F5ECE00C0C625 /* PrivateCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateCommon.swift; sourceTree = "<group>"; };
 		E21DE2E4218072B300C0C625 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E262F1A121798138009634BB /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
+		FC27F427BCD3E264B5E16526 /* Pods_YahooShoppingSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YahooShoppingSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692BDCEDA0D2C40FD4F69812 /* Pods_YahooShoppingSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB35436C973C5CD7DF64B15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7BCADAC07A36AA8080EEC16 /* Pods-YahooShoppingSearch.debug.xcconfig */,
+				9D476D8229D7DEF8DE23C79A /* Pods-YahooShoppingSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E4A4C5BEE66BE20848D7A9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC27F427BCD3E264B5E16526 /* Pods_YahooShoppingSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E212396121777A2100292849 = {
 			isa = PBXGroup;
 			children = (
 				E212396C21777A2100292849 /* YahooShoppingSearch */,
 				E212396B21777A2100292849 /* Products */,
+				0AB35436C973C5CD7DF64B15 /* Pods */,
+				8E4A4C5BEE66BE20848D7A9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E212397C21777A2300292849 /* Build configuration list for PBXNativeTarget "YahooShoppingSearch" */;
 			buildPhases = (
+				1FF495C2F346DE0549266479 /* [CP] Check Pods Manifest.lock */,
 				E212396621777A2100292849 /* Sources */,
 				E212396721777A2100292849 /* Frameworks */,
 				E212396821777A2100292849 /* Resources */,
+				81BAD650C70251AA24A04130 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +167,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FF495C2F346DE0549266479 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YahooShoppingSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81BAD650C70251AA24A04130 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YahooShoppingSearch/Pods-YahooShoppingSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YahooShoppingSearch/Pods-YahooShoppingSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E212396621777A2100292849 /* Sources */ = {
@@ -296,6 +377,7 @@
 		};
 		E212397D21777A2300292849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7BCADAC07A36AA8080EEC16 /* Pods-YahooShoppingSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +396,7 @@
 		};
 		E212397E21777A2300292849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D476D8229D7DEF8DE23C79A /* Pods-YahooShoppingSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
