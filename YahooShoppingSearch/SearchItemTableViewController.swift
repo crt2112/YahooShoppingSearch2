@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import RxSwift
+import Moya
 
 class SearchItemTableViewController: UITableViewController, UISearchBarDelegate {
 
     var itemDataArray = [ItemData]()
     var imageCache = NSCache<AnyObject, UIImage>()
     let appid = YahooClientID
-    let entryURL: String = "https://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSerarch"
-    //let entryURL: String = "http://shopping.yahooapis.jp/ShoppingWebService/V1/itemSearch"
+    let entryURL: String = "https://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch"
     // 数字を金額形式にするフォーマッター
     let priceFormat = NumberFormatter()
     
@@ -42,6 +43,23 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
         // 現在のリストをクリア
         itemDataArray.removeAll()
         
+        // Moya(Alamofire) で接続する場合
+        
+        let disposeBag = DisposeBag()
+        
+        ApiManager.shared.request(YahooApi.GetSearchItem(searchWord: inputText))
+            .subscribe(onSuccess: { (profile) in
+                print(profile)
+            }) { (error) in
+                print(error)
+            }
+            .disposed(by: disposeBag)
+
+        
+        //@@@@@
+        
+        // URLSession で接続する場合
+        /*
         // パラメータ指定
         let parameter = ["appid": appid, "query": inputText]
         
@@ -50,6 +68,7 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
         
         // API リクエスト
         request(requestUrl: requestUrl)
+        */
         
         // キーボードを閉じる
         searchBar.resignFirstResponder()

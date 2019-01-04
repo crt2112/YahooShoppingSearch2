@@ -17,6 +17,7 @@
 		E21DE2E3217F5ECE00C0C625 /* PrivateCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DE2E2217F5ECE00C0C625 /* PrivateCommon.swift */; };
 		E21DE2E5218072B300C0C625 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DE2E4218072B300C0C625 /* WebViewController.swift */; };
 		E262F1A221798138009634BB /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262F1A121798138009634BB /* ItemSearchResultSet.swift */; };
+		E28627D321DC40C00023B9D4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28627D221DC40C00023B9D4 /* ApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,8 @@
 		E21DE2E2217F5ECE00C0C625 /* PrivateCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateCommon.swift; sourceTree = "<group>"; };
 		E21DE2E4218072B300C0C625 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E262F1A121798138009634BB /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
-		FC27F427BCD3E264B5E16526 /* Pods_YahooShoppingSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YahooShoppingSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28627D221DC40C00023B9D4 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		FC27F427BCD3E264B5E16526 /* Pods_YahooShoppingSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YahooShoppingSearch.framework; path = "../../Library/Developer/Xcode/DerivedData/YahooShoppingSearch-dtiokljcruyzldcyazmmtccxlgpo/Build/Products/Debug-iphoneos/Pods_YahooShoppingSearch.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		E212396C21777A2100292849 /* YahooShoppingSearch */ = {
 			isa = PBXGroup;
 			children = (
+				E28627D121DC40950023B9D4 /* ApiManager */,
 				E212396D21777A2100292849 /* AppDelegate.swift */,
 				E212397121777A2100292849 /* Main.storyboard */,
 				E212397421777A2300292849 /* Assets.xcassets */,
@@ -98,6 +101,14 @@
 				E21DE2E4218072B300C0C625 /* WebViewController.swift */,
 			);
 			path = YahooShoppingSearch;
+			sourceTree = "<group>";
+		};
+		E28627D121DC40950023B9D4 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				E28627D221DC40C00023B9D4 /* ApiManager.swift */,
+			);
+			path = ApiManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 				E262F1A221798138009634BB /* ItemSearchResultSet.swift in Sources */,
 				E21DE2E5218072B300C0C625 /* WebViewController.swift in Sources */,
 				E21DE2DF217B65E200C0C625 /* ItemTableViewCell.swift in Sources */,
+				E28627D321DC40C00023B9D4 /* ApiManager.swift in Sources */,
 				E21DE2E1217CAA9A00C0C625 /* SearchItemTableViewController.swift in Sources */,
 				E212396E21777A2100292849 /* AppDelegate.swift in Sources */,
 				E21DE2E3217F5ECE00C0C625 /* PrivateCommon.swift in Sources */,
