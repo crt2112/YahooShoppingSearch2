@@ -18,6 +18,8 @@
 		E21DE2E5218072B300C0C625 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DE2E4218072B300C0C625 /* WebViewController.swift */; };
 		E262F1A221798138009634BB /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262F1A121798138009634BB /* ItemSearchResultSet.swift */; };
 		E28627D321DC40C00023B9D4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28627D221DC40C00023B9D4 /* ApiManager.swift */; };
+		E28627D521E074860023B9D4 /* ApiManagerNoRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28627D421E074860023B9D4 /* ApiManagerNoRx.swift */; };
+		E28627D721E08DF20023B9D4 /* ApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28627D621E08DF20023B9D4 /* ApiTarget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		E21DE2E4218072B300C0C625 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E262F1A121798138009634BB /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
 		E28627D221DC40C00023B9D4 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		E28627D421E074860023B9D4 /* ApiManagerNoRx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerNoRx.swift; sourceTree = "<group>"; };
+		E28627D621E08DF20023B9D4 /* ApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTarget.swift; sourceTree = "<group>"; };
 		FC27F427BCD3E264B5E16526 /* Pods_YahooShoppingSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YahooShoppingSearch.framework; path = "../../Library/Developer/Xcode/DerivedData/YahooShoppingSearch-dtiokljcruyzldcyazmmtccxlgpo/Build/Products/Debug-iphoneos/Pods_YahooShoppingSearch.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				E28627D221DC40C00023B9D4 /* ApiManager.swift */,
+				E28627D421E074860023B9D4 /* ApiManagerNoRx.swift */,
+				E28627D621E08DF20023B9D4 /* ApiTarget.swift */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
@@ -242,10 +248,12 @@
 				E262F1A221798138009634BB /* ItemSearchResultSet.swift in Sources */,
 				E21DE2E5218072B300C0C625 /* WebViewController.swift in Sources */,
 				E21DE2DF217B65E200C0C625 /* ItemTableViewCell.swift in Sources */,
+				E28627D521E074860023B9D4 /* ApiManagerNoRx.swift in Sources */,
 				E28627D321DC40C00023B9D4 /* ApiManager.swift in Sources */,
 				E21DE2E1217CAA9A00C0C625 /* SearchItemTableViewController.swift in Sources */,
 				E212396E21777A2100292849 /* AppDelegate.swift in Sources */,
 				E21DE2E3217F5ECE00C0C625 /* PrivateCommon.swift in Sources */,
+				E28627D721E08DF20023B9D4 /* ApiTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +403,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DBB9P46DP;
 				INFOPLIST_FILE = YahooShoppingSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DBB9P46DP;
 				INFOPLIST_FILE = YahooShoppingSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

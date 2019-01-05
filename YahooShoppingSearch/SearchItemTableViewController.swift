@@ -43,8 +43,8 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
         // 現在のリストをクリア
         itemDataArray.removeAll()
         
-        // Moya(Alamofire) で接続する場合
-        
+        // Moya(Rx版) で接続する場合
+        /*
         let disposeBag = DisposeBag()
         
         ApiManager.shared.request(YahooApi.GetSearchItem(searchWord: inputText))
@@ -55,8 +55,22 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
             }
             .disposed(by: disposeBag)
 
+        */
         
-        //@@@@@
+        // Moya(NoRx版) で接続する場合
+        let request = YahooApi.GetSearchItem(searchWord: inputText)
+        ApiManagerNoRx.shared.send(request) { (response, error) in
+            if let response = response {
+                print("@@@@@ res \(response)")
+                // 商品のリストに追加
+                self.itemDataArray.append(contentsOf: response.resultSet.firstObject.result.items)
+                // テーブル描画更新
+                self.tableView.reloadData()
+            }
+            if let error = error {
+                print("@@@@@ err \(error)")
+            }
+        }
         
         // URLSession で接続する場合
         /*
